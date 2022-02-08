@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- publish: $(System.DefaultWorkingDirectory)/home/vsts/work/1/s/target/naga-0.0.1-SNAPSHOT.jar
+- publish: $(System.DefaultWorkingDirectory)/target/naga-0.0.1-SNAPSHOT.jar
   artifact: naga-0.0.1-SNAPSHOT.jar
 
 - task: ShellScript@2
