@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: PC-4191
+  name: PC-4191
 
 steps:
 - task: Maven@3
