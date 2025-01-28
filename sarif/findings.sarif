@@ -1,0 +1,481 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "C/C++test",
+          "semanticVersion": "2023.2.0",
+          "rules": [
+            {
+              "id": "CWE-476-a",
+              "name": "null ポインターの間接参照を避ける",
+              "shortDescription": {
+                "text": "null ポインターの間接参照を避ける"
+              },
+              "fullDescription": {
+                "text": "null ポインターの間接参照を避ける [CWE-476-a]\n\nBuild your secure coding skills and defend your code:\n\n[CWE 476] NULL Pointer Dereference [What is this? (2min video)](https://media.securecodewarrior.com/v2/Module_52_Null_Dereference_v2.mp4?utm_source=github-sarif-action)\n\nA NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/memory/nullderef)",
+                "markdown": "## Build your secure coding skills and defend your code\n\n#### [CWE 476] NULL Pointer Dereference *[What is this? (2min video)](https://media.securecodewarrior.com/v2/Module_52_Null_Dereference_v2.mp4?utm_source=github-sarif-action)*\n\n* A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/memory/nullderef)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "null ポインターの間接参照を避ける [CWE-476-a]"
+              },
+              "properties": {
+                "tags": [
+                  "Common Weakness Enumeration",
+                  "CWE-476 NULL Pointer Dereference"
+                ]
+              }
+            },
+            {
+              "id": "CWE-119-g",
+              "name": "汚染されたデータによるバッファー オーバーフローを避ける",
+              "shortDescription": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける"
+              },
+              "fullDescription": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける [CWE-119-g]"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける [CWE-119-g]"
+              },
+              "properties": {
+                "tags": [
+                  "Common Weakness Enumeration",
+                  "CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer"
+                ]
+              }
+            },
+            {
+              "id": "CWE-119-j",
+              "name": "コピー元バッファーのサイズをチェックしていない、疑わしい strcpy の使用",
+              "shortDescription": {
+                "text": "コピー元バッファーのサイズをチェックしていない、疑わしい strcpy の使用"
+              },
+              "fullDescription": {
+                "text": "コピー元バッファーのサイズをチェックしていない、疑わしい strcpy の使用 [CWE-119-j]"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "help": {
+                "text": "コピー元バッファーのサイズをチェックしていない、疑わしい strcpy の使用 [CWE-119-j]"
+              },
+              "properties": {
+                "tags": [
+                  "Common Weakness Enumeration",
+                  "CWE-119 Improper Restriction of Operations within the Bounds of a Memory Buffer"
+                ]
+              }
+            },
+            {
+              "id": "CWE-787-e",
+              "name": "汚染されたデータによるバッファー オーバーフローを避ける",
+              "shortDescription": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける"
+              },
+              "fullDescription": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける [CWE-787-e]\n\nBuild your secure coding skills and defend your code:\n\n[CWE 787] Out-of-bounds Write [What is this? (2min video)](https://media.securecodewarrior.com/v2/Module_56_Buffer_Overflow_v2.mp4?utm_source=github-sarif-action)\n\nThe software writes data past the end, or before the beginning, of the intended buffer. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/memory/buffer)",
+                "markdown": "## Build your secure coding skills and defend your code\n\n#### [CWE 787] Out-of-bounds Write *[What is this? (2min video)](https://media.securecodewarrior.com/v2/Module_56_Buffer_Overflow_v2.mp4?utm_source=github-sarif-action)*\n\n* The software writes data past the end, or before the beginning, of the intended buffer. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/memory/buffer)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "汚染されたデータによるバッファー オーバーフローを避ける [CWE-787-e]"
+              },
+              "properties": {
+                "tags": [
+                  "Common Weakness Enumeration",
+                  "CWE-787 Out-of-bounds Write"
+                ]
+              }
+            },
+            {
+              "id": "CWE-798-a",
+              "name": "文字列リテラルをハード コードしない",
+              "shortDescription": {
+                "text": "文字列リテラルをハード コードしない"
+              },
+              "fullDescription": {
+                "text": "文字列リテラルをハード コードしない [CWE-798-a]\n\nBuild your secure coding skills and defend your code:\n\n[CWE 798] Use of Hard-coded Credentials [What is this? (2min video)](https://media.securecodewarrior.com/v2/module_57_sensitive_data_exposure.mp4?utm_source=github-sarif-action)\n\nThe software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/infoexposure/sensitiveinfo)\n\n[Matched on \"Hard-coded Credential\"] Hard-coded credential [What is this? (2min video)](https://media.securecodewarrior.com/v2/module_148_use_of_hardcoded_keys.mp4?utm_source=github-sarif-action)\n\nThis vulnerability occurs when the keys used for performing the encryption are not secured properly. This could be because the keys are hard coded in the app and remain same throughout the application life cycle and for each version installed on different devices. The use of a hard coded cryptographic key tremendously increases the probability that encrypted data may be recovered. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/mobile/broken_cryptography/use_of_hardcoded_keys)",
+                "markdown": "## Build your secure coding skills and defend your code\n\n#### [CWE 798] Use of Hard-coded Credentials *[What is this? (2min video)](https://media.securecodewarrior.com/v2/module_57_sensitive_data_exposure.mp4?utm_source=github-sarif-action)*\n\n* The software contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/web/infoexposure/sensitiveinfo)\n\n#### [Matched on \"Hard-coded Credential\"] Hard-coded credential *[What is this? (2min video)](https://media.securecodewarrior.com/v2/module_148_use_of_hardcoded_keys.mp4?utm_source=github-sarif-action)*\n\n* This vulnerability occurs when the keys used for performing the encryption are not secured properly. This could be because the keys are hard coded in the app and remain same throughout the application life cycle and for each version installed on different devices. The use of a hard coded cryptographic key tremendously increases the probability that encrypted data may be recovered. [Try this challenge in Secure Code Warrior](https://portal.securecodewarrior.com/?utm_source=partner-integration:github-sarif-action&partner_id=github-sarif-action#/contextual-microlearning/mobile/broken_cryptography/use_of_hardcoded_keys)"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "文字列リテラルをハード コードしない [CWE-798-a]"
+              },
+              "properties": {
+                "tags": [
+                  "Common Weakness Enumeration",
+                  "CWE-798 Use of Hard-coded Credentials"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CWE-798-a",
+          "level": "note",
+          "message": {
+            "text": "文字列リテラルがコードに直接埋め込まれている: %s"
+          },
+          "partialFingerprints": {
+            "lineHash": "-1504380969"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 11,
+                  "endColumn": 12
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CWE-476-a",
+          "level": "error",
+          "message": {
+            "text": "\"buffer\" は null の可能性がある"
+          },
+          "partialFingerprints": {
+            "lineHash": "1626111219"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Cause - NULL 値のソース  *** NULL 値のキャリア: malloc(...)"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "  *** NULL 値のキャリア: malloc(...) -> buffer"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Point - null ポインタ間接参照のポイント  *** NULL 値のキャリア: buffer"
+                        }
+                      },
+                      "nestingLevel": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CWE-119-g",
+          "level": "error",
+          "message": {
+            "text": "buffer のサイズは 100 であり、入力 input のサイズはチェックされなかった。バッファー オーバーフローの可能性がある "
+          },
+          "partialFingerprints": {
+            "lineHash": "1626111219"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Cause - バッファー入力を汚染  *** 汚染されたデータ: input, input[]"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Point - 汚染された値をバッファーにコピー  *** 汚染されたデータ: input, input[]"
+                        }
+                      },
+                      "nestingLevel": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CWE-787-e",
+          "level": "error",
+          "message": {
+            "text": "buffer のサイズは 100 であり、入力 input のサイズはチェックされなかった。バッファー オーバーフローの可能性がある "
+          },
+          "partialFingerprints": {
+            "lineHash": "1626111219"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 8,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 9,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Cause - バッファー入力を汚染  *** 汚染されたデータ: input, input[]"
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 10,
+                            "startColumn": 1
+                          }
+                        }
+                      },
+                      "nestingLevel": 0
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                          },
+                          "region": {
+                            "startLine": 11,
+                            "startColumn": 1
+                          }
+                        },
+                        "message": {
+                          "text": "Violation Point - 汚染された値をバッファーにコピー  *** 汚染されたデータ: input, input[]"
+                        }
+                      },
+                      "nestingLevel": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "CWE-119-j",
+          "level": "warning",
+          "message": {
+            "text": "strcpy の呼び出しの前にコピー元バッファーのサイズのチェックがない"
+          },
+          "partialFingerprints": {
+            "lineHash": "1626111219"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:/home/goda/work/arm-linux-gnueabihf/PanaEC2/SampleProject/test.cpp"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 5,
+                  "endColumn": 6
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
