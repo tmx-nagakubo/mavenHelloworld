@@ -41,7 +41,7 @@ jobs:
       run: mvn com.github.spotbugs:spotbugs-maven-plugin:4.2.3:check
 
     - name: Archive JAR file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: naga-jar
         path: target/naga-0.0.1-SNAPSHOT.jar
