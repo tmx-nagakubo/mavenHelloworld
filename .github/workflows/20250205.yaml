@@ -1,0 +1,46 @@
+name: Java CI with Maven
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 1.7
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '1.7'
+
+    - name: Cache Maven packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Install SpotBugs
+      run: mvn com.github.spotbugs:spotbugs-maven-plugin:4.2.3:check
+
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    - name: Run tests with SpotBugs
+      run: mvn com.github.spotbugs:spotbugs-maven-plugin:4.2.3:check
+
+    - name: Archive JAR file
+      uses: actions/upload-artifact@v2
+      with:
+        name: naga-jar
+        path: target/naga-0.0.1-SNAPSHOT.jar
